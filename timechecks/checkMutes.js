@@ -13,7 +13,7 @@ module.exports.run = (client) => {
 
             if ((Date.now() - lastMute.timeAtEnd) > 0) {
 
-                const guild = client.guilds.cache.get('717406545159389226');
+                const guild = client.guilds.cache.get(client.config.guildID);
                 const mutedUser = guild.members.cache.get(member.userID);
                 mutedUser.roles.remove(client.config.muteRole, 'Mute time completed')
                     .then(user => {

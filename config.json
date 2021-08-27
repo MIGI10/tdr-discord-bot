@@ -1,6 +1,7 @@
 {
   "prefix": "!",
   "botOwnerID": "",
+  "guildID": "",
   "logChannel": "",
   "modRole": "",
   "muteRole": "",

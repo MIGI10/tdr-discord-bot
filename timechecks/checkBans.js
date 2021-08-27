@@ -13,7 +13,7 @@ module.exports.run = (client) => {
 
             if ((Date.now() - lastBan.timeAtEnd) > 0) {
 
-                const guild = client.guilds.cache.get('717406545159389226');
+                const guild = client.guilds.cache.get(client.config.guildID);
                 guild.members.unban(member.userID, 'Ban time completed')
                     .then(user => {
 
